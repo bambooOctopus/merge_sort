@@ -16,34 +16,50 @@ def is_sorted?(array)
     end    
 end
 
-puts is_sorted?(array_2)
-
-
 def split(array)
-    # if array.length > 1
-    #   divide by two
-    #   feed those into merge
 
     
-    mid_point = (array.length) / 2
-    
-    left_side = array[0..mid_point]
-    right_side = array[mid_point + 1..array.length]
 
-    print left_side 
-    print right_side
+   
 
+        
+
+
+
+            mid_point = (array.length) / 2
+        
+            left_side = array[0..mid_point]
+            right_side = array[mid_point + 1..array.length]
+            puts
+            print [left_side, right_side]
+            [left_side, right_side]                         
+
+
+            
+       
     
+end
+   
+
+def merge(array)
     
-    # now check if they have more than one element
+    print array[0]
+    print array[1]
 
 end
 
-def merge(left_array, right_array)
-    if array.length > 1
-        split(array)
+def merge_sort(array)
+    if is_sorted?(array)
+        print array
     end
+
+    split(array)
+
+    
 end
 
 
 
+
+
+merge_sort(array_1)
