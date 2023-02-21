@@ -1,11 +1,8 @@
 array_1 = [7, 2, 4, 8, 1, 0, 26, 3, 8, 98, 11]
 array_2 = [1, 2, 3, 4, 5, 6]
 
-def is_sorted?(array)
-
-    
+def is_sorted?(array)    
     array.each_with_index do |e, index|
-
         last = array.length - 1
 
         if index == last            
@@ -14,41 +11,15 @@ def is_sorted?(array)
             return false
         else
             return true
-        end
-        
-        
+        end  
 
-
-        
-        
-         
-        
-    #    if e < array[index+1]
-    #     puts "yes;jkdfsjkl;sdf;kjldfskjl;dfsklj;fds"
-           
-    #    else
-    #        puts "nonononononononon"
-    #    end
-        
-        # if e < array[index+1]
-        #     next
-        # else
-        #     false
-        # end
-
-        
-    end
-
-    
-
-    
+    end    
 end
 
 puts is_sorted?(array_2)
 
 
 def split(array)
-
     # if array.length > 1
     #   divide by two
     #   feed those into merge
